@@ -25,3 +25,9 @@ jobs:
       run: dotnet test --no-build --verbosity normal 
     - name: Publish
       run: dotnet publish NewWorkshop2_Ex1.sln
+      
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Workshop2
+        path: NewWorkshop2_Ex1.sln
